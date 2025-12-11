@@ -1,0 +1,137 @@
+{% extends "partials/dashboard-base.html" %}
+{% load static %}
+{% load humanize %}
+{% block content %}
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paylio - Money Transfer and Online Payments HTML Template</title>
+
+    <!-- Static CSS files -->
+    <link rel="shortcut icon" href="{% static 'assets/img/fav.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugin/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugin/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/custom-family.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugin/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugin/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style-rtl.min.css' %}" id="rtl-stylesheet" disabled>
+</head>
+
+<body>
+
+    <!-- Scroll To Top Start-->
+    <a href="javascript:void(0)" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a>
+    <!-- Scroll To Top End -->
+
+    <!-- Header Section -->
+    <header class="header-section">
+        <div class="overlay">
+            <div class="container">
+                <div class="row d-flex header-area">
+                    <nav class="navbar d-flex navbar-expand-lg navbar-dark">
+                        {#<a class="navbar-brand" href="{% url 'home' %}"></a>#}
+                            <img src="{% static 'assets/img/logo.png' %}" class="logo" alt="logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown">
+                                        Home
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        {# <li><a class="nav-item" href="{% url 'home1' %}">Home 1</a></li> #}
+                                        {# <li><a class="nav-item" href="{% url 'home2' %}">Home 2</a></li> #}
+                                        {# <li><a class="nav-item" href="{% url 'home3' %}">Home 3</a></li> #}
+                                    </ul>
+                                </li>
+
+                                <!-- More nav items -->
+                            </ul>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Banner Section -->
+    <section class="banner-section inner-pages contact">
+        <div class="overlay">
+            <div class="banner-content pb-120">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-10">
+                            <div class="main-content">
+                                <h1>Contact</h1>
+                                <div class="breadcrumb-area">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb d-flex gap-1 align-items-center">
+                                            <li class="breadcrumb-item p-0 position-relative"><a href="#">Home</a></li>
+                                            <li class="breadcrumb-item p-0 position-relative"><a href="#">Pages</a></li>
+                                            <li class="breadcrumb-item p-0 position-relative active" aria-current="page">Contact</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Additional sections here -->
+    </section>
+    <!-- Banner Section End -->
+
+    <!-- Footer Section -->
+    <footer class="footer-section inner">
+        <div class="overlay">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-5">
+                            <div class="app-market d-flex justify-content-between align-items-center">
+                                <div class="single borders">
+                                    <a href="#"><img src="{% static 'assets/img/gPlay_btn.png' %}" alt="Google Play"></a>
+                                    <h6>4.5/5</h6>
+                                </div>
+                                <div class="single">
+                                    <a href="#"><img src="{% static 'assets/img/apple_btn.png' %}" alt="App Store"></a>
+                                    <h6>4.5/5</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer bottom -->
+                <div class="footer-bottom">
+                    <div class="main-content">
+                        <p>PAYLIO © 2025. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Static JS files -->
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/slick.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/plugin.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+</html>
+{% endblock content %}
