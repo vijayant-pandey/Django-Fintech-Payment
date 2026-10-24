@@ -1,0 +1,26 @@
+databases:
+  - name: paylio-db
+    plan: free
+    databaseName: paylio
+    user: paylio
+
+services:
+  - type: web
+    name: paylio
+    runtime: python
+    plan: free
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn payment_prj.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.1
+      - key: DATABASE_URL
+        fromDatabase:
+          name: paylio-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: WEB_CONCURRENCY
+        value: 2

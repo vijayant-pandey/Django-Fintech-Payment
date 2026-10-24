@@ -12,13 +12,14 @@ django-jquery-js==3.1.1
 django-js-asset==3.0.1
 django-static-fontawesome==6.5.2.0
 pillow==11.1.0
-pip==24.3.1
 rjsmin==1.2.3
 shortuuid==1.0.13
 sqlparse==0.5.3
 tablib==3.7.0
 tzdata==2024.2
-uuid==1.30
-gunicorn-23.0.0
+gunicorn==23.0.0
 requests
 python-dotenv
+whitenoise==6.8.2
+dj-database-url==2.3.0
+psycopg2-binary==2.9.10
